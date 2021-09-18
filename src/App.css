@@ -1,0 +1,87 @@
+.App {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .lemc-popup {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+      display: block;
+      z-index: 99999;
+  }
+  
+  .app-label{
+    width: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: white;
+    pointer-events: none;
+  }
+  
+  .map-container{
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .clicked-coord-label{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .clicked-coord-label p {
+    margin: 10px;
+  }
+
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+    z-index: 999;
+  }
+  .ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+  .ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+  .ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+  }
+  .ol-popup-closer:after {
+    content: "✖";
+  }
